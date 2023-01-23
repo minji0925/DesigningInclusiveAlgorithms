@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<h2>Ratings & Reviews</h2>
+</head>
+
+<body>
+<form action="insert.php" method="post">
+	<label for="songname">Choose the song name: </label>
+	<select name="song-names" id="song-names">
+		<option value="drivers license">drivers license</option>
+		<option value="Comethru">Comethru</option>
+		<option value="Permission to Dance">Permission to Dance</option>
+	</select><br><br>
+
+	<label for="composer">Choose the songwriter: </label>
+	<select name="composer-names" id="composer-names">
+		<option value="Olivia Rodrigo">Olivia Rodrigo</option>
+		<option value="Jeremy Zucker">Jeremy Zucker</option>
+		<option value="Ed Sheeran">Ed Sheeran</option>
+	</select><br><br>
+	
+	<label for="singer">Choose the singer: </label>
+	<select name="singer-names" id="singer-names">
+		<option value="Olivia Rodrigo">Olivia Rodrigo</option>
+		<option value="Jeremy Zucker">Jeremy Zucker</option>
+		<option value="BTS">BTS</option>
+	</select><br><br>
+	
+	<label for="genre">Genre:</label>
+	<select name="genre" id="genre">
+		<option value="pop">pop</option>
+		<option value="hip hop">hip hop</option>
+		<option value="kpop">kpop</option>
+	</select><br><br>
+	
+	<label for="userID">User ID:</label>
+    <input type="text" name="userID" id="userID"><br><br>
+	
+	<label for="rating">Rating (on a scale of 1-5): </label>
+	<select name="rating" id="rating">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+	</select><br><br>
+  
+  <label for="lname">Review:</label><br>
+  <textarea id="review" name="review" rows="4" cols="50"></textarea><br><br><br>
+  <button type="submit" name = "submit">Submit</button>
+</form>
+</body>
+</html>
